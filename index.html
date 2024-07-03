@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Project</title>
+
+    <style>
+        .total_price_memo{
+          width:450px ;
+          margin: 0  auto;
+          box-shadow: 0 0 8px rgba(0,0,0,0.5);
+          display: flex;
+          border-radius: 10px;
+          flex-direction: column;
+          padding: 20px;
+        }
+        .total_price_memo h1{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+ 
+        .price_main{
+          display: flex;
+          align-items: center;
+          gap: 120px;
+          font-size: 20px;
+        }
+ 
+        .price_main p{
+           font-size: 15px;
+        }
+ 
+        .totalprice{
+           border-top: 2px solid #000;
+           width: 250px;
+           margin: 0 210px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+ 
+        .price_main:nth-child(5) P{
+           margin-left: -105px;
+        }
+ 
+        .price{
+           font-size: 20px;
+        }
+     </style>
+     
+</head>
+<body>
+    
+    <div class="total_price_memo">
+        <h1>Product Memo</h1>
+         <div class="price_main">
+             <h4>Product Price: </h4>
+             <p class="originalprice"></p>
+         </div>
+         <div class="price_main">
+             <h4>Total Vat(6%): </h4>
+             <p class="vat">hfgdsdhfg</p>
+         </div>
+         <div class="price_main">
+             <h4>Price with Vat: </h4>
+             <p class="pricewithVat"></p>
+         </div>
+ 
+         <div class="price_main">
+             <h4>Discount Percentage(50%): </h4>
+             <p class="discountpercentage"></p>
+         </div>
+         
+         <div class="price_main">
+             <h4>Discount Price: </h4>
+             <p class="discountprice"></p> 
+         </div>
+         <div class="totalprice">
+               <h1 class="price"></h1>
+         </div>
+     </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
